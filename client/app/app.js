@@ -1,3 +1,8 @@
 let me = 'Chris';
 
-alert(me);
+function doStuff() {
+    alert(me);
+}
+
+doStuff();
+
