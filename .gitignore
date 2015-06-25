@@ -1,5 +1,6 @@
 node_modules
 client/bundle.js
 client/bundle.js.map
+dist
 *.log
 .DS_Store
