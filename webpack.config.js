@@ -6,9 +6,14 @@ module.exports = {
   devtool: 'sourcemap',
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel', exlcude: [/node_modules/] },
+      { test: /\.js$/, loader: 'babel', exclude: [/node_modules/] },
       { test: /\.html$/, loader: 'raw' },
-      { test: /\.styl$/, loader: 'style!css!stylus' }
+      { test: /\.styl$/, loader: 'style!css!stylus' },
+      { test: /\.css$/, loader: 'css' }
     ]
+  },
+
+  stylus: {
+    use: [require('jeet')()]
   }
 };
