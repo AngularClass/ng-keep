@@ -22,5 +22,10 @@
     "stylus-loader": "^1.2.1",
     "webpack": "^1.9.12",
     "webpack-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.1",
+    "jeet": "^6.1.2",
+    "normalize.css": "^3.0.3"
   }
 }
