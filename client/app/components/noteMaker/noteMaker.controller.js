@@ -2,17 +2,19 @@ const defaultContent = 'nothing';
 
 class NoteMakerController {
   // inject things here
-  constructor() {
+  constructor(Notes) {
     this.newNote = '';
+    this.Notes = Notes;
   }
 
   createNote(content = defaultContent) {
+    console.log('add')
     // will use this later
-    alert('new note!', content);
+    this.Notes.addNote(content);
     this.newNote = '';
   }
 }
 
-NoteMakerController.$inject = [];
+NoteMakerController.$inject = ['Notes'];
 
 export {NoteMakerController};
