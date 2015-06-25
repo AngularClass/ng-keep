@@ -3,9 +3,10 @@ import './app.styl';
 import angular from 'angular';
 // we need to import
 // other angular modules and
-// register them him
+// register them them
 angular.module('app', [
   // module dependencies here
+  // modules have name properties
 ])
 .directive('app', ()=> {
   return {
