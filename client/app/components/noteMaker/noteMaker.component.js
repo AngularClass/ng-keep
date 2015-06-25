@@ -7,6 +7,7 @@ let noteMakerComponent = ()=> {
     controllerAs: 'vm',
     restrict: 'E',
     controller,
+    scope: {},
     replace: true,
     template
   };

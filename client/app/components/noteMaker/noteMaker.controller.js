@@ -5,13 +5,18 @@ class NoteMakerController {
   constructor(Notes) {
     this.newNote = '';
     this.Notes = Notes;
+    console.log('loaded')
   }
 
-  createNote(content = defaultContent) {
+  createNote(content) {
     console.log('add')
     // will use this later
     this.Notes.addNote(content);
     this.newNote = '';
+  }
+
+  getData(){
+    return 'heyy'
   }
 }
 
